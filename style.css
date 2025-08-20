@@ -1,0 +1,103 @@
+body {
+  background-image: url('bg.png');
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;  
+  background-attachment: fixed; 
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  background-blend-mode: overlay;
+
+.profile-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(20, 20, 20, 0.85);
+  border: 2px solid #00ffff;
+  border-radius: 12px;
+  box-shadow: 0 0 30px #00ffff88;
+  backdrop-filter: blur(6px);
+}
+
+.avatar-frame {
+  position: relative;
+  text-align: center;
+}
+
+.avatar {
+  width: 160px;
+  border-radius: 50%;
+  border: 3px solid #ff00cc;
+  box-shadow: 0 0 15px #ff00cc88;
+}
+
+.hearts-overlay {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #ff00cc;
+  text-shadow: 0 0 5px #ff00cc;
+}
+
+.quotes p {
+  font-style: italic;
+  margin: 10px 0;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff88;
+}
+
+.info, .integrations, .note, .activity {
+  margin-top: 20px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 3px solid #ff00cc;
+}
+
+.info a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info a:hover {
+  text-decoration: underline;
+  color: #ff00cc;
+}
+
+.integrations ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.integrations li {
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.note {
+  background: rgba(255, 0, 204, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  color: #ff00cc;
+  font-style: bold;
+}
+
+.activity {
+  font-size: 13px;
+  color: #999;
+  font-family: 'Courier New', monospace;
+}
+
+.discord-widget {
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff88;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 30px;
+}
