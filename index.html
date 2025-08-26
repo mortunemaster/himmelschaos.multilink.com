@@ -5,12 +5,28 @@
   <title>himmelschaos</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="extra/extra0.css">
+  <audio id="bg-music" src="extra/song0.mp3" autoplay loop></audio>
 </head>
 <body>
   <div class="profile-container">
     <div class="avatar-frame">
       <img src="img/avatar.png" class="avatar">
     </div>
+
+    <div class="button-container">
+      <button onclick="toggleMusic()" class="neon-button">🎶</button>
+    </div>
+
+    <script>
+      const audio = document.getElementById('bg-music');
+      function toggleMusic() {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+    </script>
 
     <div class="activity">
       <p>добро пожаловать в мою альтернативу мультилинка!</p>
@@ -26,13 +42,15 @@
         <p>.</p>
         <p><strong>"Программист"</strong></p>
         <p>почему в кавычках? потому что из моих знаний и умений лишь базовый html</p>
+        <p>.</p>
+        <p><strong>Игры?</strong></p>
+        <p>могу составить компанию в доте, майн, терка, стардью, фазма</p>
       </div>
     </div>
 
     <div class="note">
       <p>📝 Дополнительная информация:</p>
       <div class="info">
-        <p><strong>Discord:</strong> <a href="https://discord.gg/PmQpMZ7je8" target="_blank">ЖМИ!</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/mortunemaster" target="_blank">ЖМИ!</a></p>
         <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@minekisser" target="_blank">ЖМИ!</a></p>
         <p><strong>Steam:</strong> <a href="https://steamcommunity.com/id/bigproblemsforbigpidors/" target="_blank">ЖМИ!</a></p>
@@ -70,4 +88,3 @@
   </div>
 </body>
 </html>
-
